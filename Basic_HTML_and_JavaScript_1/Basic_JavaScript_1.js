@@ -1,0 +1,1 @@
+alert("ALERT: Be aware that JavaScript is running on this webpage");
