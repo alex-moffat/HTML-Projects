@@ -1,0 +1,17 @@
+p {
+	color: ghostwhite;
+	background: darkslateblue; 
+	font-family: candara;
+	font-Size: small;
+	font-style: normal;
+	text-align: right;
+}
+.shadowFont {
+	color: darkRed;
+	font-size: 500%;
+	font-family: Georgia;
+	font-weight: normal;
+	text-align: center;
+	font-style: normal;
+	text-shadow: -5px 5px 10px LightCoral;
+}

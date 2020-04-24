@@ -1,0 +1,45 @@
+/* ----- Header 1 ----- */
+h1 {
+	color: ghostwhite;
+	background: darkslateblue; 
+	font-family: Arial;
+	font-Size: 150%;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center;
+	text-decoration: underline;
+}
+/* ----- Entire Table ----- */
+table {
+	border: 2px solid darkslateblue;
+	width: 100%;
+}
+/* ----- Table Body ----- */
+th,td {
+	border: 1px solid lavender;
+	font-family: Arial;
+	padding: 5px;
+	text-align: center;
+}
+
+/* ----- HOVER Individual Table Data Cells ----- */
+td:hover {
+	background-color: moccasin;
+	color: tomato;
+	font-weight: bold;
+}
+/* ----- Table Header ----- */
+th {
+	background-color: darkslateblue;
+	color: lavender;
+	padding: 15px;	
+}
+/* ----- Table Rows ----- */
+tr {
+	background-color: Ghostwhite;
+	color: black;
+}
+/* ----- Table Zebra Rows ----- */
+tr:nth-child(even) {
+	background-color: white;	
+}
