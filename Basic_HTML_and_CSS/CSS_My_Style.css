@@ -1,4 +1,8 @@
 /* ----------------------------------- HEADERS ---------------- */
+/* ----- Section ------ */
+section {
+	margin-left: 10px;
+}
 /* ----- Header 1 ----- */
 h1 {
 	color: ghostwhite;
