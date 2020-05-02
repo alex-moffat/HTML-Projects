@@ -1,0 +1,93 @@
+/* ------------------------------------------------------------
+    GALLERY SECTION ANIMATION
+    ---------------------------------------------------------*/
+
+P {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}  
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 300px; /*- unneeded for squre photos */
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px; /*- unneeded for square photos */
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    /* may accomplish the same thing as '.photocontainer img' target
+    width: 300px;
+    height: 300px;
+    */
+    padding: 0px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.photo-overlay {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Justify and align doesn't function without display:flex */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.white-head {
+    color: #c9bdaa;
+    transition: color .5s;
+    font-size: 150%; /* enlarge font size */
+    margin-top: 10%; /* increase margin */
+    line-height: 30px;
+    padding: 20px; /* add padding all around */  
+    opacity: 1;  
+}
+
+.photo-overlay p {
+    width: 100%;
+    height: 100%;
+    /*color: #fff; redundant - from parent '.photo-overlay' */
+}
+
+/* ------------------------------------------------------------
+    PHOTO OVERLAY TRANSITIONS
+    ---------------------------------------------------------*/
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;       
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform 1s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
