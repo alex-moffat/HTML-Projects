@@ -1,6 +1,19 @@
 /*=======================================
         MENU SECTION
 =======================================*/
+
+/* ADDED <a> TAG INSTRUCTIONS WITH PADDING TO ENLARGE CLICK BOX */
+a:link, a:visited, a:active { 
+    text-decoration: none; 
+    display:block;
+    padding: 15px 40px;
+    color: #000000; 
+}
+
+a:hover {
+    color: #f00;
+}
+
 .menu {
     color: #ff0000;
     font: bold 12px/18px sans-serif;
@@ -13,12 +26,13 @@
 }
 
 .menu li {
+    text-decoration: none;
+    display: inline-block;
+    position:relative;
     color: #000000;
     background-color: rgba(255,255,255,1);
-    display: inline-block;
     margin: 0% auto;
-    position:relative;
-    padding: 15px 4%;
+    padding: 0; /* collapsed padding around <a> tags extra padding */
     border: 1px solid #9d9fa2;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,.5);
     border-radius: 6px;
