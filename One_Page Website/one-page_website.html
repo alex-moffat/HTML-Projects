@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="icon" href="./images/icons/Studio_Logo.png" type="image/gif" sizes="16x16">
 		<title>Mandelkorn Studio</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="mandelkorn.css">
+		<link rel="stylesheet" type="text/css" href="./css/mandelkorn.css">
 	</head>
 	<body>
-		<!---------- HEADER -->
+		<!-- HEADER -->
 		<header>
-			<h1>Mandelkorn Studio</h1>
-			<p>Professional vocal training and performance</p>	
+			<img src="./images/icons/Studio_Logo.png" width="50">
+			Mandelkorn Studio				
 		</header>
 		<!--End Header -->
 		
-		<!---------- NAV -->
-		<div>
+		<!-- NAV -->
+		<nav>
 			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#services" id="link"><li>SERVICES</li></a>
-					<!-- <a href="#programs" id="link"><li>PROGRAMS</li></a> -->
-					<a href="#about" id="link"><li>ABOUT</li></a>
-					<a href="#contact" id="link"><li>CONTACT</li></a>					
+				<ul class="menu">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#contact">CONTACT</a></li>					
 				</ul>
 			</div>
-		</div>
+		</nav>
 		<!-- END NAV -->
 		
 		<!---------- HOME -->
 		<div id="home">
-			<div><!-- Video -->
+			<div class="container">
 				<video autoplay muted loop>
-					<source src="./video/bannerVideo.mp4" type="video/mp4">
+					<source src="./video/bannerVideo.mp4" type="video/mp4" id="backVideo">
 					Your browser does not support this video type.
 				</video>
-				<DIV><!-- Overlay -->
-					<span>Professional Voice Studio</span>
-					<p>Music Theater &nbsp;|&nbsp Opera &nbsp;|&nbsp Pop</p>		
-				</DIV>
+				<div class="centeredBox">
+					<span class="head-main">Professional vocal training and performance</span>
+					<h2>Music Theater &nbsp;|&nbsp Opera &nbsp;|&nbsp Pop</h2>							
+				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
@@ -54,7 +54,7 @@
 							<div> <!-- Overlay -->
 								<h3>Voice Lesson</h3>
 								<p>Personalized voice technique: 50 minutes one-on-one.</p>
-							</div
+							</div>
 						</div>					
 					</div>
 					<!-- END PHOTO-CONTAINER 1 -->
@@ -66,7 +66,7 @@
 							<div> <!-- Overlay -->
 								<h3>Vocal Coaching</h3>
 								<p>Song presentation and diction: 50 minutes one-on-one.</p>
-							</div
+							</div>
 						</div>					
 					</div>
 					<!-- END PHOTO-CONTAINER 2 -->
@@ -78,7 +78,7 @@
 							<div> <!-- Overlay -->
 								<h3>Audition Preparation</h3>
 								<p>Repertoire, character and presentation development: 50 minutes one-on-one.</p>
-							</div
+							</div>
 						</div>					
 					</div>
 					<!-- END PHOTO-CONTAINER 3 -->
@@ -141,10 +141,10 @@
 		</section>
 		<!-- END CONTACT -->
 		
-		<!---------- FOOTER -->
-		<div>
-			<footer>www.mandelkornstudio.com &nbsp;|&nbsp; &copy; 2020</footer>
-		</div>	
+		<!-- FOOTER -->
+		<footer>
+			www.mandelkornstudio.com &nbsp;|&nbsp; &copy; 2020
+		</footer>	
 		<!-- END FOOTER -->		
 	</body>
 </html>

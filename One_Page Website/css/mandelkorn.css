@@ -1,0 +1,390 @@
+/*=======================================
+        GENERIC STYLES
+=======================================*/
+html {
+    font-family: sans-serif;
+    font-size: 62%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ 
+nav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 100;
+}
+
+header {
+    position: fixed;
+    color: darkslateblue;
+    background-color: rgba(255, 255, 255,.8);
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    z-index:99;
+}
+
+footer {
+    display: block;
+    background-color:silver;
+    color:white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    padding: 30px;
+    text-align: center;
+}
+
+body {
+    font-size: 14px;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #111825;
+    background-color: #ffffff;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+/*=======================================
+        MENU SECTION
+=======================================*/
+
+/* ADDED <a> TAG INSTRUCTIONS WITH PADDING TO ENLARGE CLICK BOX */
+a:link, a:visited, a:active { 
+    text-decoration: none; 
+    display:block;
+    padding: 15px 40px;
+    color: darkslateblue; 
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition-property: color;
+    transition-duration:.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color:lavender;
+}
+
+.menu {
+    text-align: center;
+    display: inline;
+    margin: auto;
+    padding: 0;
+    list-style: none;    
+}
+
+.menu li {
+    display: inline-block;
+    position:relative;
+    background-color: lavender;
+    margin: 12px auto;
+    padding: 0; /* collapsed padding around <a> tags extra padding */
+    border: 1px solid silver;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
+    border-radius: 6px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration:.5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    background-color: darkslateblue;
+}
+
+/*=======================================
+        PAGES
+=======================================*/
+
+/* ---------- HOME ----------*/
+#home {
+    padding-top: 0px; /* spacer before main title */
+    padding-bottom: 100px; /* spacer after main title */
+    color: #fff;
+}
+
+.container {
+    position: relative;    
+}
+
+.container video{
+    position: relative; 
+    width: 100%;
+    height: auto;
+    z-index: -1;   
+}
+
+.centeredBox {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /** Position should be absolute */
+    position: absolute;
+    /** And box must have a width, any width */
+    width: 100%;
+    padding-top: 500px;
+    z-index:1;
+    text-align: center;    
+}
+
+.head-main {
+    text-shadow:2px 4px 5px rgba(0,0,0,.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 40px;
+    text-align: center;
+    font-family: impact, san-serif;
+    line-height:2;
+    font-weight: 900;
+    border: 5px double #ffffff;
+    padding: 20px; 
+}
+
+.content-center {
+    position: relative;
+    left: -75%;     
+}
+
+/* ---------- HEADERS ----------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkslateblue;
+    border-top: 3px solid darkslateblue;
+    border-bottom: 3px solid darkslateblue;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    display: block;
+    width: 400px;
+    margin: 50px auto;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 50px;
+    color: lavender;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20 px;
+}
+
+h4 {
+    padding-top: 25px;
+    line-height: 40px;
+    padding-bottom: 0px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+/* ---------- PARAGRAPH ----------*/
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+/* ---------- CLASSES ----------*/
+
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+.navbar {
+    height: 105px;
+    max-height: 340px;
+    display: block;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* ---------- FIXES ----------*/
+.clearfix:after {
+    clear: both;
+    display: table;
+    content:" ";
+}
+
+
+/* ---------- CONTACT ----------*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.5);
+}
+
+#contact {
+    background-color: #f5f3f3;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: -1px -1px 1px rgba(0,0,0,.1), 1px 2px 10px rgba(0,0,0,.5);
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161B;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161B;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color: #13161B;
+    text-align: center; /* added to correct alignment */
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
+.reservation form {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8d8d;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: #e3dede;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,.3);    
+}
+
+.reservation input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8d8d;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,.15);    
+}
+
+.reservation input[class="rsvp"]:hover {
+    box-shadow: 0 0 18px rgba(165,65,0,.8);    
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 8% 6% 0 0; /* changed code here to correct display position */
+    padding-left: 40px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    color: rgb(225,225,225);
+    padding: 7px 0px;
+    width: 25%;
+    margin: 10px 3%;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+}
+
+.submit input[type="submit"]:hover {
+    color:#000000;
+    background-color: #8d8e6f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.5);
+}
