@@ -4,7 +4,7 @@
 		<link rel="icon" href="./images/icons/Studio_Logo.png" type="image/gif" sizes="16x16">
 		<title>Mandelkorn Studio</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="./css/mandelkorn.css">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -35,7 +35,7 @@
 					Your browser does not support this video type.
 				</video>
 				<div class="centeredBox">
-					<span class="head-main">Professional vocal training and performance</span>
+					<span class="head-main">Professional Vocal Training and Performance</span>
 					<h2>Music Theater &nbsp;|&nbsp Opera &nbsp;|&nbsp Pop</h2>							
 				</div>
 			</div>
@@ -106,18 +106,18 @@
 		<!---------- CONTACT -->
 		<section>
 			<div id="contact">
-				<div>
-					<h1>CONTACT</h1>
-					<div>
-						<h2><span>Get serious about your voice.</span></h2>
+				<h1>CONTACT</h1>
+				<div class="padBottom">
+					<div class=formBox>
+						<h2>Time to get serious about your voice.</h2>
 						<h3>What I want to know about you:</h3>
-						<div>
+						<div class="contactForm">
 							<form action="" method="POST">
-								First Name: <input class="rsvp" type="text" value="First Name"><br>
-								Last Name: <input class="rsvp" type="text" value="Last Name"><br>
-								Email: <input class="rsvp" type="text" value="you@domain.com"><br>
-								Phone: <input class="rsvp" type="text" value="000.000.0000"><br>
-								Goals: <input class="rsvp" type="text" value="Goals"><br>
+								<label for="fName">First Name </label><input id="fName" class="rsvp" type="text" value="" placeholder="First Name"><br>
+								<label for="lName">Last Name </label><input id="lName" class="rsvp" type="text" value="" placeholder="Last Name"><br>
+								<label for="email">Email </label><input id="email" class="rsvp" type="email" value="" placeholder="Email Address"><br>
+								<label for="phone">Phone </label><input id="phone" class="rsvp" type="tel" value="" placeholder="206-123-4569" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+								<label for="goals">Goals </label><input id="goals" class="rsvp" type="text" value="" placeholder="Briefly describe previous experience and your goals for professional training"><br>
 								Gender:<br>
 								<input type="radio" name="gender" value="Male"> Male<br>
 								<input type="radio" name="gender" value="Female"> Female<br>
@@ -133,8 +133,7 @@
 									<input type="reset" value="Reset">
 								</div>
 							</form>
-						</div>
-						
+						</div>		
 					</div>
 				</div>
 			</div>
