@@ -1,0 +1,325 @@
+/*========== BASE ==========*/
+h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 8rem; 
+}
+
+/*========== BOX ROW ==========*/
+  
+.box-row {
+    text-align: right;
+    color: rgb(157, 165, 41); 
+}
+.box-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box-row:hover {
+    color: rgb(199, 223, 64);
+}
+
+.box-column2 p:hover {
+    color: rgb(226, 81, 13);
+    background-color: rgb(216, 216, 202);
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.301);
+    text-shadow: 2px 2px 4px rgb(39, 41, 10);
+    padding: 4%;
+}
+
+.box-column2 {
+    text-align: left;
+    box-sizing: border-box;
+    float:left;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
+.box-column3 {
+    box-sizing: border-box;
+    float:left;
+    width: 33.33%;
+    height: 300px;
+    padding: 2%;
+}
+.box-column4 {
+    box-sizing: border-box;
+    float:left;
+    width: 25%;
+    height: 400px;
+    padding: 2%;
+}
+
+/*========== NAVAGATION  ==========*/
+
+/* The navigation bar */
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: rgb(84, 94, 28);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 2;
+  }
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    background-color: rgb(103, 116, 33);
+    border-right: 1px solid rgb(199, 223, 64);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+.navbar a:hover {
+    background: rgb(199, 223, 64);
+    color: rgb(46, 51, 15);
+  }
+  
+/*========== CENTER  ==========*/
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;         
+}
+
+/*========== CONTAINERS  ==========*/
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column2 {
+    box-sizing: border-box;
+    float:left;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
+
+.container75 {
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    width: 75%;        
+}
+.container75 img {
+    width: 100%;
+    height: 100%;        
+}
+
+.image-op {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: 1s ease;
+    backface-visibility: hidden;
+}
+
+.container75:hover .image-op {
+    opacity: 0.3;    
+}
+
+.lens-op{
+    transition: 1s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;    
+}
+
+.container75:hover .lens-op {
+    opacity: .75;    
+}
+
+.textBox {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(36, 133, 76); 
+    color: white; 
+    padding: 2%;      
+}
+
+.textInfo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    padding: 2%;   
+}
+
+.over-fade {
+    border-radius: 5%;
+    margin: 1%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 96%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgb(36, 133, 76);
+}
+.container75:hover .over-fade {
+    opacity: .95;    
+}
+
+.container50 {
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;        
+}
+.container50 img {
+    width:100%;
+}
+
+.container40 {
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    display: inline-block;
+    width: 40%;        
+}
+.container40 img {
+    width:100%;
+}
+
+.big-text {
+    font-family: monospace;
+    font-size: 150px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(250, 247, 209);
+    opacity: 50%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.301);
+}
+
+.text-over-photo {
+    text-align: center;
+    position: absolute; /* set top left corner of block to top left of previous relatively positioned photo */
+    top: 50%; /* down 50% from top of photo */ 
+    left: 50%; /* right 50% from left of photo */
+    /* the top left corner of the text would be at the photo center */ 
+    transform: translate(-50%,-50%); /* reposition center of text to center of photo: move X axis left (-50%) of the text block width and move Y axis up (-50%) of the text block height */
+}
+
+/*========== TABLE  ==========*/
+.center table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid darkslateblue;   
+}
+
+th, td {
+    padding: 1%;
+}
+
+thead {
+    background-color: darkslateblue;
+    color: lavender;
+}
+
+tbody {
+    background-color: lavender;
+    color: darkslateblue; 
+}
+
+tfoot {
+    background-color: rgb(120, 101, 243);
+    color: rgb(146, 182, 81)
+}
+
+/*========== FOOTER  ==========*/
+footer {
+    font-weight: bold;
+}
+
+/*========== IMAGE BORDER  ==========*/
+img {
+    border-radius: 5%;
+    margin: 1%;
+}
+
+/*========== BLACK & WHITE filters ==========*/
+.filter-bw-100 {
+    filter: grayscale(100%);
+}
+.filter-bw-50 {
+    filter: grayscale(50%);
+}
+.filter-bw-25 {
+    filter: grayscale(50%);
+}
+
+/*========== BLUR filters ==========*/
+.filter-bl-10 {
+    filter: blur(10px);
+}
+.filter-bl-5 {
+    filter: blur(5px);
+}
+.filter-bl-2 {
+    filter: blur(2px);
+}
+
+/*========== BRIGHTNESS filters ==========*/
+.filter-br-200 {
+    filter: brightness(200%);
+}
+.filter-br-150 {
+    filter: brightness(150%);
+}
+.filter-br-50 {
+    filter: brightness(50%);
+}
+
+/*========== CONTRAST filters ==========*/
+.filter-co-200 {
+    filter: contrast(200%);
+}
+.filter-co-150 {
+    filter: contrast(150%);
+}
+.filter-co-50 {
+    filter: contrast(50%);
+}
+
+/*========== SATURATION filters ==========*/
+.filter-sa-200 {
+    filter: saturate(200%);
+}
+.filter-sa-150 {
+    filter: saturate(150%);
+}
+.filter-sa-50 {
+    filter: saturate(50%);
+}
+
+/*========== SEPIA filters ==========*/
+.filter-se-100 {
+    filter: sepia(100%);
+}
+.filter-se-50 {
+    filter: sepia(50%);
+}
+.filter-se-25 {
+    filter: sepia(25%);
+}
