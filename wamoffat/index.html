@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--========================================
+                HEAD
+    =========================================-->
+    <head>
+		<title>Alex Moffat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/amoffat_portfolio.css">
+	</head>
+    <!--========================================
+                BODY
+    =========================================-->
+    <body>
+        <!--========== NAV ==========-->
+        <nav class="navbar">
+            <div id="logo">
+                <a href="#home"><img src="./images/logos/AM Logo_Knockout_white.png" alt="AM" height="45"></a>
+            </div> 
+            <a class="link" href="#home">Home</a> 
+		    <a class="link" href="#about">About</a>
+		    <a class="link" href="#gitHub">GitHub</a>
+            <a class="link" href="#contact">Contact</a>            
+        </nav>
+        
+        <!--========== HOME ==========-->
+        <header id="home">
+            <div>
+                <video id="home_video" class="back_video" autoplay muted loop> <!-- play automatically (only if muted) on a loop -->
+                    <source src="./video/surf.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+                </video>
+            </div>
+        </header>        
+        
+        <!--========== VIDEO ==========-->
+        <main>
+            <!-- Video text --> 
+            <div class="video_text"> 
+                <h1>Alex Moffat</h1>
+                <div class="line40"></div>
+                <div class="center_text">
+                    <h2> Welcome to my portfolio website.</h2>
+                    <p>I am a product director and full-stack software developer.<br>
+                    This is where I display my software development work.<br>
+                    Learn more out about my skills, background and experience.</p>
+                    <p>Thank you for stopping by and enjoy.</p>
+                </div>        
+                <div class="line40"></div>
+                <div class="container40_center">
+                    <q>Any fool can write code that a computer can understand.<br>
+                    Good programmers write code that humans can understand.</q>
+                    <p>– Martin Fowler</p>	
+                </div>     
+            </div>
+            <!-- <div class="row_blank"></div> -->
+            
+            <!--========== ABOUT ==========-->
+            <div class="row_blank"></div>
+            <div class="row" id="about"> 
+                <!-- Left column -->
+                <div class="column2" style="background-color: white;"> 
+                    <div class="container50 pad_bottom">
+                        <div class="photo_cf"> <!-- create hover effect -->
+                            <a href="#contact"><img src="./images/headshot (2017)_cartoon.jpg" alt="Alex Moffat Headshot"></a>
+                            <a class="top" href="#contact"><img src="./images/headshot (2017).jpg" alt="Alex Moffat Headshot"></a>							
+						</div>                        
+                    </div>    
+                </div>
+                <!-- Right column -->
+                <div class="column2 text_box_pad" style="background-color: #996d61;"> 
+                    <h2 class="center_text">About</h2>
+                    <p>I am a software developer has a passion for eloquent code that meets the needs of the customer. My passionate entrepreneurial Product Director experience combined with coding knowledge allows me to identify unmet needs, lead teams and find innovative solutions that are meaningful. I am capable of collaborating across multiple disciplines to facilitate development from user needs to ideation to finished product.
+                    <br><br>I live in Seattle with my wife and two kids where we love to enjoy Pacific NW outdoor activities as much as we can.</p>
+                    <p>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. I have trained and have experience in the following web and programming languages:  
+                    HTML, CSS, JavaScript, Bootstrap, C#, Django, jQuery, React.js, .NET, ASP.NET, SQL, TSQL, Python and Lingo.</p>
+                    <p>I am a full-stack developer and would love to work with you on your project. <a href="#contact">Contact</a> me below!</p>
+                </div>
+            </div>
+
+            <!--========== GITHUB ==========-->
+           <div class="row" id="gitHub"> 
+                <!-- Left column -->
+                <div class="column2 center_text pad_bottom" style="background-color: #996d61;"> 
+                    <h2>GitHub</h2>
+                    <p>You can view my coding projects on my GitHub profile here:</p>
+                    <br>
+                    <div class="container40">
+                        <div class="photo"> <!-- create hover effect -->
+							<a href="https://github.com/alex-moffat" target="_blank"><img src="./images/logos/GitHub.png" alt="GitHub"></a>							
+						</div>                        
+                    </div>  
+                </div>
+                <!-- Right column -->
+                <div class="column2" style="background-color: white;"> 
+                    <div class="row_pad"></div>
+                    <div class="container75">
+                        <div class="photo"> <!-- create hover effect -->
+							<a href="https://github.com/alex-moffat" target="_blank"><img src="./images/laptop-coffee.png" alt="Laptop"></a>							
+						</div>                        
+                    </div>    
+                </div>
+            </div>   
+            
+             <!--========== CONTACT ==========-->
+            <div class="row margin_bottom" id="contact"> 
+                 <!-- Left column -->
+                <div class="column2 pad_bottom" style="background-color: white;"> 
+                    <div class="row_pad"></div>
+                    <div class="container75">
+                        <div class="photo_bw"> <!-- create hover effect -->
+                            <a href="mailto: wamoffat4@gmail.com"><img src="./images/mailbox.jpg" alt="Alex Moffat email"></a>							
+                        </div>                        
+                    </div>      
+                </div>
+                 <!-- Right column -->
+                <div class="column2 text_box_pad" style="background-color: #996d61;"> 
+                    <h2 class="center_text">Contact</h2>
+                    <div class="contactForm">
+                        <form action="" method="POST">
+                            <label for="name">Name</label><br>
+                                <input id="name" class="rsvp" type="text" value="" placeholder="First and Last Name"><br>
+                            <label for="email">Email</label><br>
+                                <input id="email" class="rsvp" type="email" value="" placeholder="Please enter your email here"><br>
+                            <label for="message">Message</label><br>
+                                <input id="message" class="rsvp" type="text" value="" placeholder="Please write your message here"><br>
+                            <br>
+                            <div>
+                                <input class="form_submit" type="submit" value="Submit">									
+                            </div>
+                        </form>
+                    </div>                
+                </div>
+            </div>
+ 
+           
+        </main>        
+
+        <!--========== FOOTER ==========-->
+        <footer>
+            <p><small>&copy;</small> 2020 Alex Moffat &nbsp; | &nbsp; <a href="mailto: wamoffat4@gmail.com">wamoffat4@gmail.com</a></p>
+        </footer>
+	</body>
+</html>

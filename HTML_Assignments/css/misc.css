@@ -210,7 +210,7 @@ h1 {
 
 .text-over-photo {
     text-align: center;
-    position: absolute; /* set top left corner of block to top left of previous relatively positioned photo */
+    position: absolute; /* sets top left corner of block to top left of previous relatively positioned photo */
     top: 50%; /* down 50% from top of photo */ 
     left: 50%; /* right 50% from left of photo */
     /* the top left corner of the text would be at the photo center */ 
