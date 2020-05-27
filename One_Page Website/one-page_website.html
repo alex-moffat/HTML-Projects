@@ -4,13 +4,16 @@
 		<link rel="icon" href="./images/icons/Studio_Logo.png" type="image/gif" sizes="16x16">
 		<title>Mandelkorn Studio</title>
 		<meta charset="utf-8">
+		<meta name="author" content="Alex_Moffat">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./JS/one-page_website.js"></script>
 	</head>
-	<body>
+	<body onLoad='loadMe()'>
 		<!-- HEADER -->
 		<header>
 			<img src="./images/icons/Studio_Logo.png" width="50">
-			Mandelkorn Studio				
+			&nbsp; Mandelkorn Studio				
 		</header>
 		<!--End Header -->
 		
@@ -41,6 +44,104 @@
 			</div>
 		</div>
 		<!-- END HOME -->
+		
+		<!--========== LIGHTBOX ==========-->
+		<section id="Lightbox">
+			<h1>PERFORMANCE READY</h1>
+			<!--========== Images used to open the lightbox -->
+			<div class="Row">
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/auditorium.jpg" alt='Small House' onclick="openLightBox(1)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/sydney-opera-house.jpg" alt='Big House' onclick="openLightBox(2)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/moulin-rouge.jpg" alt='Broadway' onclick="openLightBox(3)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/ballet.jpg" alt='Chorus' onclick="openLightBox(4)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/chorus.jpg" alt='Soloist' onclick="openLightBox(5)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+				<div class="Thumb">
+					<img class='Img_Thumb' src="./images/pop-star.jpg" alt='Pop Star' onclick="openLightBox(6)">
+					<p class='Thumb_Text'>Click</p>
+				</div>
+			</div>
+
+			<!--========== The Lightbox -->
+			<div id="Light_Box" class="Light_Box">
+				<span class="Close Cursor" onclick="closeLightBox()">&times;</span>
+				<div class="Box_Content">
+					<!--===== SLIDE 1 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/auditorium.jpg" alt='Small House' data-caption='Connection with your character and music translates to the audience.'>
+						<div class='Img_Text'></div>
+					</div>
+					<!--===== SLIDE 2 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/sydney-opera-house.jpg" alt='Big House' data-caption='Technical perfection, projection, placement and stage presence.'>
+						<div class='Img_Text'></div>
+					</div>
+					<!--===== SLIDE 3 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/moulin-rouge.jpg" alt='Broadway' data-caption='Communication through text and music with belt and mixed-belt technique.'>
+						<div class='Img_Text'></div>
+					</div>
+					<!--===== SLIDE 4 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/ballet.jpg" alt='Chorus' data-caption='Finding the right part for your voice and using good technique, even in a crowd.'>
+						<div class='Img_Text'></div>
+					</div>
+					<!--===== SLIDE 5 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/chorus.jpg" alt='Soloist' data-caption='Projecting, finding your unique voice and communication through text.'>
+						<div class='Img_Text'></div>
+					</div>
+					<!--===== SLIDE 6 -->
+					<div class="Slide">
+						<img class='Img_Full' src="./images/pop-star.jpg" alt='Pop Star' data-caption='Microphone technique, pop style and spot-on riffing key to this game.'>
+						<div class='Img_Text'></div>
+					</div>
+
+					<!--===== ARROW NAVIGATION -->
+					<div class="prev" onclick="changeSlide(-1)">&#10094;</div>
+					<div class="next" onclick="changeSlide(1)">&#10095;</div>
+			
+					<!--===== CAPTION TEXT -->
+					<div class="Container_Caption">
+						<p id="Caption"></p>
+					</div>
+			
+					<!--===== THUMBNAIL NAVIGATION -->
+					<div class="Column">
+						<img class='Demo' src="./images/auditorium.jpg" alt='Small House' onclick="slideShow(1)">
+					</div>
+					<div class="Column">
+						<img class='Demo' src="./images/sydney-opera-house.jpg" alt='Big House' onclick="slideShow(2)">
+					</div>
+					<div class="Column">
+						<img class='Demo' src="./images/moulin-rouge.jpg" alt='Broadway' onclick="slideShow(3)">
+					</div>
+					<div class="Column">
+						<img class='Demo' src="./images/ballet.jpg" alt='Chorus' onclick="slideShow(4)">
+					</div>
+					<div class="Column">
+						<img class='Demo' src="./images/chorus.jpg" alt='Soloist' onclick="slideShow(5)">
+					</div>
+					<div class="Column">
+						<img class='Demo' src="./images/pop-star.jpg" alt='Pop Star' onclick="slideShow(6)">
+					</div>					
+				</div>
+			</div>			
+		</section>		
 		
 		<!---------- SERVICES -->
 		<section>
@@ -118,17 +219,23 @@
 								<label for="email">Email </label><input id="email" class="rsvp" type="email" value="" placeholder="Email Address"><br>
 								<label for="phone">Phone </label><input id="phone" class="rsvp" type="tel" value="" placeholder="206-123-4569" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
 								<label for="goals">Goals </label><input id="goals" class="rsvp" type="text" value="" placeholder="Briefly describe previous experience and your goals for professional training"><br>
-								Gender:<br>
-								<input type="radio" name="gender" value="Male"> Male<br>
-								<input type="radio" name="gender" value="Female"> Female<br>
-								<input type="radio" name="gender" value="Other"> Other<br>
-								Voice:<br>
-								<input type="radio" name="voice" value="Soprano"> Soprano<br>
-								<input type="radio" name="voice" value="Alto"> Alto<br>
-								<input type="radio" name="voice" value="Tenor"> Tenor<br>
-								<input type="radio" name="voice" value="Baritone"> Baritone<br>
-								<input type="radio" name="voice" value="Bass"> Bass<br>
-								<div>
+								<div class="container clearfix marginTop">
+									<div class="column_2">
+										Voice:<br>
+										<input class="voice" type="radio" name="voice" value="Soprano"> Soprano<br>
+										<input class="voice" type="radio" name="voice" value="Alto"> Alto<br>
+										<input class="voice" type="radio" name="voice" value="Tenor"> Tenor<br>
+										<input class="voice" type="radio" name="voice" value="Baritone"> Baritone<br>
+										<input class="voice" type="radio" name="voice" value="Bass"> Bass
+									</div>
+									<div class="column_2">
+										Gender:<br>
+										<input class="gender" type="radio" name="gender" value="Male"> Male<br>
+										<input class="gender" type="radio" name="gender" value="Female"> Female<br>
+										<input class="gender" type="radio" name="gender" value="Other"> Other<br>
+									</div>									
+								</div>
+								<div class="container marginTop">
 									<input type="submit" value="Submit">
 									<input type="reset" value="Reset">
 								</div>
