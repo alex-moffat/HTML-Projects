@@ -17,19 +17,36 @@
 		</header>
 		<!--End Header -->
 		
-		<!-- NAV -->
+		<!--========== NAV -->
 		<nav>
 			<div>
 				<ul class="menu">
 					<li><a href="#home">HOME</a></li>
 					<li><a href="#services">SERVICES</a></li>
 					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#contact">CONTACT</a></li>					
+					<li><a href="#contact">CONTACT</a></li>
+					<li><a class="btn" onclick="openForm()" href='#home'>LOGIN</a></li>					
 				</ul>
 			</div>
 		</nav>
-		<!-- END NAV -->
-		
+				
+		<!--========== LOGIN POPUP -->
+		<div class="form-popup" id="Login_Popup" >
+			<form action="" class="form-container" onsubmit="return validateForm()" method="post">
+				<h3>LOGIN</h3>
+			
+				<label for="email"><b>Email</b></label>
+				<input type="email" placeholder="Enter Email" name="email" required>
+			
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+			
+				<button type="submit" class="btn">Login</button>
+				<button type="submit" class="btn" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+
+
 		<!---------- HOME -->
 		<div id="home">
 			<div class="container">
@@ -39,15 +56,23 @@
 				</video>
 				<div class="centeredBox">
 					<span class="head-main">Professional Vocal Training and Performance</span>
-					<h2>Music Theater &nbsp;|&nbsp Opera &nbsp;|&nbsp Pop</h2>							
+					<h2 class='fade'>Music Theater &nbsp;|&nbsp Opera &nbsp;|&nbsp Pop</h2>												
 				</div>
+				
 			</div>
 		</div>
 		<!-- END HOME -->
-		
+		<div class='stinky-container'>
+			<button class="sticky-btn" onclick="openForm()">LOGIN</button>
+		</div>		
+
 		<!--========== LIGHTBOX ==========-->
 		<section id="Lightbox">
 			<h1>PERFORMANCE READY</h1>
+			<div class="ticker-tape">
+				<h3 class="tape">Get yourself performance ready for all different venues and situations. Get the skillsets you need with custom tailored training for the goals you have as an artist. &nbsp;</h3>
+			</div>
+			
 			<!--========== Images used to open the lightbox -->
 			<div class="Row">
 				<div class="Thumb">
@@ -193,8 +218,10 @@
 		<div id="about">
 			<div>
 				<h1>ABOUT ME</h1>
-				<img src="./Images/Lisa.jpg" width="400" alt="Lisa Mandelkorn">
-				<h2>Lisa Mandelkorn</h2>
+				<div class='container40-center'>
+					<img class='scale-20' src="./Images/Lisa.jpg" alt="Lisa Mandelkorn">
+				</div>
+				<h2 class='center_text'>Lisa Mandelkorn</h2>				
 				<DIV><!-- Overlay -->
 					<h3><span>Professional Singer, Director, Librettist and Teacher</span></h3>
 					<p>Prior to moving to Seattle from New York City in 2010, Lisa Mandelkorn was performing roles such as Adele in Die Fledermaus, Rosina in Barber of Seville, and Gretel in Hansel and Gretel in such opera houses as New York City Opera, Lincoln Center Festival, and Glimmerglass Opera. After the move she decided she wanted to try music theater and other more modern forms of vocal performance, so she tried her hand at such roles as Mary Poppins (Bainbridge Performing Arts), Judy Garland in Judy Garland’s Scary Little Christmas (ArtsWest), and Donna in Mamma Mia (Seattle Musical Theater). She has been nominated twice for Best Actress by the Kitsap Sun and South Sound Critics Award. Lisa has a thriving vocal studio with students from age 14 - 74 of all voice types. She loves helping her students find their true voices, giving them all the tools they need to make music their own way.</p>		
@@ -210,15 +237,15 @@
 				<h1>CONTACT</h1>
 				<div class="padBottom">
 					<div class=formBox>
-						<h2>Time to get serious about your voice.</h2>
+						<h2 class="center_text">Time to get serious about your voice.</h2>
 						<h3>What I want to know about you:</h3>
 						<div class="contactForm">
-							<form action="" method="POST">
-								<label for="fName">First Name </label><input id="fName" class="rsvp" type="text" value="" placeholder="First Name"><br>
-								<label for="lName">Last Name </label><input id="lName" class="rsvp" type="text" value="" placeholder="Last Name"><br>
-								<label for="email">Email </label><input id="email" class="rsvp" type="email" value="" placeholder="Email Address"><br>
-								<label for="phone">Phone </label><input id="phone" class="rsvp" type="tel" value="" placeholder="206-123-4569" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-								<label for="goals">Goals </label><input id="goals" class="rsvp" type="text" value="" placeholder="Briefly describe previous experience and your goals for professional training"><br>
+							<form name='contactForm' action="" onsubmit="return validateForm()" method="post">
+								<label for="fName">First Name </label><input name='fName' class="rsvp" type="text" value="" placeholder="First Name"><br>
+								<label for="lName">Last Name </label><input name='lName' class="rsvp" type="text" value="" placeholder="Last Name"><br>
+								<label for="email">Email </label><input name='email' class="rsvp" type="email" value="" placeholder="Email Address"><br>
+								<label for="phone">Phone </label><input name='phone' class="rsvp" type="tel" value="" placeholder="206-123-4569" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+								<label for="goals">Goals </label><input name='goals' class="rsvp" type="text" value="" placeholder="Briefly describe previous experience and your goals for professional training"><br>
 								<div class="container clearfix marginTop">
 									<div class="column_2">
 										Voice:<br>
@@ -236,8 +263,7 @@
 									</div>									
 								</div>
 								<div class="container marginTop">
-									<input type="submit" value="Submit">
-									<input type="reset" value="Reset">
+									<input type="submit" value="Submit">									
 								</div>
 							</form>
 						</div>		
@@ -246,6 +272,7 @@
 			</div>
 		</section>
 		<!-- END CONTACT -->
+		
 		
 		<!-- FOOTER -->
 		<footer>

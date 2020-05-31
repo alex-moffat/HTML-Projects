@@ -14,7 +14,10 @@ function loadMe() {
     //========== LOAD TEXT
     loadAltText();
     console.log("Number of slides: " + SlideCount); 
-    console.log(DemoList);   
+    console.log(DemoList);
+    //========== FADE IN
+    fade(1); // 1= fade in 0= fadeout
+
 }
 
 //========== FUNCTIONS & METHODS ===============
@@ -90,3 +93,37 @@ function slideShow(n) {
     } 
     document.getElementById('Caption').innerHTML = captionText;    
 } 
+
+//========== FADE
+function fade(n) {
+    let fList = document.getElementsByClassName('fade');
+    for (i = 0; i < fList.length; i++) {
+        if (n=1) {
+            fList[i].classList.add('fade-in');
+        } else {
+            fList[i].classList.remove('fade-in');
+        }        
+    }
+}
+
+//========== FORM VALIDATION
+function validateForm() {
+    var nList = ['fName','lName','email','phone','goals','voice','gender']; // preload all the form inputs to be checked
+    var a = "Please make sure your form is complete.";
+    for (i=0; i<nList.length; i++) {
+        console.log(document.forms["contactForm"][nList[i]].value);
+        if (document.forms["contactForm"][nList[i]].value == '') {
+            alert(a);
+            return false;
+        }
+    }    
+}
+
+//========== POPUP LOGIN
+function openForm() {
+    document.getElementById("Login_Popup").style.display = "block";
+}
+  
+function closeForm() {
+    document.getElementById("Login_Popup").style.display = "none";
+}
