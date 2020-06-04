@@ -9,7 +9,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Alex Moffat's software development portfolio website. Alex Moffat is a product director with experience developing consumer facing hardware and software solutions. This porfolio website provides examples and links to Alex Moffat's work.">
-        <meta name="keywords" content="HTML, CSS, JavaScript, XML, Alex Moffat, product director, product manager, software engineer, software developer, medical device, Solius, Solar Salon, Benesol, consumer products, website development">
+        <meta name="keywords" content="HTML, CSS, JavaScript, XML, Bootstrap, Adobe Director, SQL, Python, C#, .NET, Alex Moffat, product director, product manager, software engineer, software developer, medical device, Solius, Solar Salon, Benesol, consumer products, website development">
         <meta name="author" content="Alex Moffat">
         <link rel="stylesheet" type="text/css" href="./css/amoffat.css">
         <script src="./js/amoffat.js"></script>
@@ -39,7 +39,7 @@
         <!--========== HOME ==========-->
         <header>
             <div>
-                <video id="home_video" class="back_video" autoplay muted loop> <!-- play automatically (only if muted) on a loop -->
+                <video id="home_video" class="back_video" poster="./img/surf_splash.jpg" autoplay muted loop> <!-- play automatically (only if muted) on a loop -->
                     <source src="./video/surf.mp4" type="video/mp4">
                     Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
                 </video>
@@ -205,7 +205,7 @@
                         <!--===== SLIDE 7 -->
                         <div class="Slide">
                             <div class='Img_Text'></div>
-                            <video id="slide_video" class="Img_Full" poster="./img/spash.jpg" controls data-title='Assets' data-caption='Customer &#8594; Product &#8594; Market &#8594; Fit: Establish brands and multimedia assets that resonate with customers. Storyboarding, scripts, video, audio and graphics for sales, marketing and customer service.'>
+                            <video id="slide_video" class="Img_Full" poster="./img/spash.jpg" preload="auto" controls data-title='Assets' data-caption='Customer &#8594; Product &#8594; Market &#8594; Fit: Establish brands and multimedia assets that resonate with customers. Storyboarding, scripts, video, audio and graphics for sales, marketing and customer service.'>
                                 <source src="./video/PromoVideo_960.mp4" type="video/mp4" >
                                 Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
                             </video>
@@ -277,13 +277,14 @@
                     </div>                
                 </div>
             </div>
- 
-           
         </main>        
 
         <!--========== FOOTER ==========-->
         <footer>
             <p class='footer'>&copy; <span id='Current_Year'>2019</span> <span id='Doc_Author'></span> &nbsp; | &nbsp; <a href="mailto: wamoffat4@gmail.com">wamoffat4@gmail.com</a></p>
         </footer>
+        
+        <!--========== SCRIPT ==========-->
+        <script src="./js/video.js"></script>
 	</body>
 </html>

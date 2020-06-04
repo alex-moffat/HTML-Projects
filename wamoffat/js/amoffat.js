@@ -29,7 +29,7 @@ function loadMe() {
 
 //========== DOCUMENT TITLE
 function getTitle() {
-    console.log(document.getElementById('Doc_Title'));
+    console.log(document.getElementById('Doc_Title').innerHTML);
     document.getElementById('Doc_Title').innerHTML = document.title;
 }
 
@@ -51,6 +51,8 @@ function getDocProps() {
             disc.style.display = "none";
             var paraList = document.getElementsByTagName("P")
             paraList[paraList.length - 1].appendChild(disc);
+        } else if (metaList[i].getAttribute('name') == "keywords") {
+            console.log("Keywords: " + metaList.keywords.content);
         } else {
             console.log("meta attribute \'name\': " + metaList[i].getAttribute('name'));
         }
