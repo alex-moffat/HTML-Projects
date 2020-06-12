@@ -327,7 +327,7 @@ nav .link:hover {
     height: 100%;          	 
 }
 
-.container100, .container75, .container60, .container50, .container40, .container30, .container20, .container15, .container10, .container5 {
+.container100, .container75, .container60, .container50, .container40, .container30, .container20, .container16, .container15, .container10, .container5 {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -360,6 +360,9 @@ nav .link:hover {
 .container20 {    
     width: 20%;            
 }
+.container16 {
+    width: 16%;
+}
 .container15 {
     width: 15%;
 }
@@ -370,7 +373,7 @@ nav .link:hover {
     width: 5%;            
 }
 
-.container100 img, .container75 img, .container60 img, .container50 img, .container40 img, .container30 img, .container20 img, .container15 img, .container10 img, .container5 img {
+.container100 img, .container75 img, .container60 img, .container50 img, .container40 img, .container30 img, .container20 img, .container16 img, .container15 img, .container10 img, .container5 img {
     width: 100%;
     max-width: 100%;
     height: auto;
