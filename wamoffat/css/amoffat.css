@@ -439,6 +439,12 @@ nav .link:hover {
     transition: 0.5s;
 }
 
+.logo-list img:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 25px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #a05846;
+    cursor: pointer;
+}
+
 /*========================================
                 LIGHTBOX
 =========================================*/
