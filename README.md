@@ -1,10 +1,23 @@
 # HTML-Projects
+Projects contained in this folder are using HTML5, CSS3, and JavaScript. Some projects are very small and were created in a few minutes and other took up to 1 - 4 days. The content menu highlights a cross section of projects and code samples of various complexity.   
 
 ## CONTENTS
 - [One-Page Vanilla Website](#one-page-vanilla-website)
 
 ## One-Page Vanilla Website
 Basic vanilla HTML, CSS, JavaScript website created in about 4 days. No Frameworks or templates were used. This project was done to satisfy requirements for The Tech Academy Bootcamp.
+
+### Commit
+- Fixed Menu with logo and JS animated buttons
+- Custom color themes and fonts
+- Signin JS popup with sticky positioning
+- Embedded Youtube video
+- Background Video with autoplay
+- Form with JS validation
+- Popup lightbox with associated titles and text
+- Custom rollover effects
+- JS ticker tape effect
+- JS Intro text fade effect
 
 ### Video
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=Haga0Cn2OuA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/One_Page%20Website/Screenshot_mandelkorn_studio.jpg"  
