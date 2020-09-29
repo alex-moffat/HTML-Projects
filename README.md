@@ -2,9 +2,324 @@
 Projects contained in this folder are using HTML5, CSS3, and JavaScript. Some projects are very small and were created in a few minutes and other took up to 1 - 4 days. The content menu highlights a cross section of projects and code samples of various complexity.   
 
 ## CONTENTS
-- [One-Page Vanilla Website](#one-page-vanilla-website)
+- [Bootstrap One-Page Website](#bootstrap-one-page-website)
+- [Vanilla One-Page Website](#vanilla-one-page-website)
 
-## One-Page Vanilla Website
+## Bootstrap One-Page Website
+Basic Bootstrap HTML, CSS, JavaScript website created in about 1.5 days from concept to complete. 
+
+### Commit
+- Sticky navbar with links
+- Basic colors 
+- Jumbotron
+- Flexbox/Rows/Columns
+- Cards/deck
+- Modal Form
+- Carousel
+- Newletter link
+
+### Video
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=NuLyN63lnTA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/Bootstrap4_project/Screenshot_cinema_1.jpg" alt="Bootstrap_Website" border="10" /></a>
+
+### HTML
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- REQUIRED (Bootstrap) meta tags -->
+    <title>Academy Cinemas</title>
+    <link rel="icon" href="./img/logo/favicon.ico" type="image/x-icon">    
+    <meta name="author" content="Alex Moffat">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <!--========== NAVIGATION ==========-->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-info">
+        <!-- Keep code to maintain collapsing menu for responsive screen size - remove text from <a> tag -->
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#deals">Deals</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!--========== BANNER - Jumbotron ==========-->  
+      <div class="jumbotron jumbotron-fluid bg-info text-center">
+          <div class="container">
+            <h1 class="display-4 text-light">Academy Cinemas</h1>
+            <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
+          </div>
+      </div>
+        
+      <!--========== ABOUT - 3 columns ==========-->
+      <div id="about" class="container mt-5">
+        <div class="row pt-5">
+          
+          <div class="col-sm pt-3">
+            <img src="./img/pdx.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+            
+          <div class="col-sm pt-3">
+            <h3>Accommodations</h3>
+            <p>Located in beautiful Portland, Oregon’s Pearl district, our reels have been spinning since 1959.</p>
+            <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
+            <p>All our auditoriums are equipped with brand new Christy 3D&reg; sound systems!</p>
+            <p>Relax in our, extra wide, plush cushioning recliners. Seating arrangement is disability friendly &#9855;.</p>
+          </div>
+          
+          <div class="col-sm pt-3">
+            <h3>Now Playing</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a class="nav-link" href="#showtimes">Kong: Skull Island</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" href="#showtimes">Ghost in the Shell</a>
+                </li>
+                <li class="list-group-item">
+                    <a class="nav-link" href="#showtimes">Beauty and the Beast</a>
+                </li>                        
+            </ul>                
+          </div>
+
+        </div>
+      </div>
+
+      <!--========== CAROUSEL - 4 latest movies ==========-->
+      <div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" data-pause=false data-interval="2000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" data-pause=false data-interval="2000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" data-pause=false data-interval="2000"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3" data-pause=false data-interval="2000"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/aquaman_w.jpg" class="d-block w-100" alt="Aquaman">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/thor_w.jpg" class="d-block w-100" alt="Thor">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/brave_w.jpg" class="d-block w-100" alt="Brave">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/300_w.jpg" class="d-block w-100" alt="300">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+      <!--========== SHOWTIMES ==========-->
+      <div id="showtimes" class="container mt-5">
+          <h3 class="mb-4">Showtimes:</h3>
+          <div class="card-deck">
+              <div class="card shadow">
+                <img class="card-img-top" src="./img/kongskullisland.jpg" alt="Kong Skull Island">
+                <div class="card-body">
+                  <h5 class="card-title">Kong Skull Island</h5>
+                  <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of mighty Kong, and must fight to escape a primal Eden.</p>
+                </div>
+                <div>
+                  <p class="card-block text-center">
+                      <span class="badge badge-pill badge-info">1:00pm</span>
+                      <span class="badge badge-pill badge-info">3:00pm</span>
+                      <span class="badge badge-pill badge-info">5:30pm</span>
+                      <span class="badge badge-pill badge-info">7:00pm</span>
+                      <span class="badge badge-pill badge-info">9:30pm</span>
+                  </p>    
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card shadow">
+                <img class="card-img-top" src="./img/ghostintheshell.jpg" alt="Ghost in the Shell">
+                <div class="card-body">
+                  <h5 class="card-title">Ghost in the Shell</h5>
+                  <p class="card-text">In the future, Major Mila Killian is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</p>
+                </div>
+                <div>
+                  <p class="card-block text-center">
+                      <span class="badge badge-pill badge-info">1:00pm</span>
+                      <span class="badge badge-pill badge-info">3:00pm</span>
+                      <span class="badge badge-pill badge-info">5:30pm</span>
+                      <span class="badge badge-pill badge-info">7:00pm</span>
+                      <span class="badge badge-pill badge-info">9:30pm</span>
+                  </p>    
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card shadow">
+                <img class="card-img-top" src="./img/beautyandthebeast.jpg" alt="Beauty and the Beast">
+                <div class="card-body">
+                  <h5 class="card-title">Beauty and the Beast</h5>
+                  <p class="card-text">A selfish Prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman, he keeps prisoner.</p>
+                </div>
+                <div>
+                  <p class="card-block text-center">
+                      <span class="badge badge-pill badge-info">1:00pm</span>
+                      <span class="badge badge-pill badge-info">3:00pm</span>
+                      <span class="badge badge-pill badge-info">5:30pm</span>
+                      <span class="badge badge-pill badge-info">7:00pm</span>
+                      <span class="badge badge-pill badge-info">9:30pm</span>
+                  </p>    
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+          </div>              
+      </div>
+
+      <!--========== DEAL - Jumbotron ==========-->  
+      <div id="deals" class="jumbotron jumbotron-fluid bg-info text-center mt-5">
+        <div class="container">
+          <h1 class="display-4 text-light">Movie Deals</h1>
+          <p class="lead text-light">Have more fun and save a bundle with our monthly deals.</p>                
+        </div>
+        <button type="submit" class="btn btn-outline-light p-3" data-toggle="modal" data-target="#register">See monthly movie deals!</button>
+      </div>
+
+      <!--========== REWARDS - email ==========-->
+      <div id="rewards" class="text-center mt-5">
+        <form>
+          <h1 class="text-primary pt-5 mb-4">Sign up for Movie Club Rewards!</h1>
+          <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <button type="submit" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" title="MEMBER REWARDS" data-content="Submit your email to receive exclusive flash sale deals right to your inbox. Opt out at any time.">
+            Submit
+          </button>
+        </form>
+      </div>
+      
+      <!--========== MODAL - form ==========-->
+      <div id="register" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Register to receive movie deals</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="fName">First Name</label>
+                  <input type="text" class="form-control" id="fName" placeholder="Firstname">
+                </div>
+                <div class="form-group">
+                  <label for="lName">Last Name</label>
+                  <input type="text" class="form-control" id="lName" placeholder="Lastname">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email Address" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="pWord">Password</label>
+                  <input type="password" class="form-control" id="pWord" placeholder="Password">
+                </div>
+                <p>Check all the options you want:</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+                  <label class="form-check-label" for="inlineCheckbox1">Weekly Newsletter</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Special Event Invites</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Vendor Promotions</label>
+                </div>                
+              </form>              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--========== BOTTOM ==========-->
+      <div class="container my-5">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <small><a class="nav-link active" href="#deals">Movie Rewards</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Movies@news.org</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+          </li>
+          <li class="nav-item">
+            <small class="nav-link">&copy;2019 Academy Cinemas&reg;</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <!--=========================================
+                BOOTSTRAP SCRIPTS 
+    ==========================================-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>        
+  
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'hover',
+        delay: {'show':500, 'hide':200}
+      })
+    </script>
+
+  </body>
+</html>
+```
+
+## Vanilla One-Page Website
 Basic vanilla HTML, CSS, JavaScript website created in about 4 days. No Frameworks or templates were used. This project was done to satisfy requirements for The Tech Academy Bootcamp.
 
 ### Commit
