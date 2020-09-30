@@ -4,11 +4,12 @@ Projects contained in this folder are using HTML5, CSS3, and JavaScript. Some pr
 ## CONTENTS
 - [Bootstrap One-Page Website](#bootstrap-one-page-website)
 - [Vanilla One-Page Website](#vanilla-one-page-website)
+- [Student Website Project](#student-website-project)
 
 ## Bootstrap One-Page Website
 Basic Bootstrap HTML, CSS, JavaScript website created in about 1.5 days from concept to complete. 
 
-### Commit
+### Features
 - Sticky navbar with links
 - Basic colors 
 - Jumbotron
@@ -322,7 +323,7 @@ Basic Bootstrap HTML, CSS, JavaScript website created in about 1.5 days from con
 ## Vanilla One-Page Website
 Basic vanilla HTML, CSS, JavaScript website created in about 4 days. No Frameworks or templates were used. This project was done to satisfy requirements for The Tech Academy Bootcamp.
 
-### Commit
+### Features
 - Fixed Menu with logo and JS animated buttons
 - Custom color themes and fonts
 - Signin JS popup with sticky positioning
@@ -1151,3 +1152,17 @@ p {
     box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,.5);
 }
 ```
+
+## Student Website Project
+During the Tech Academy Bootcamp refresher I created this basic website with vanilla HTML and CSS. 
+
+### Features
+- Fixed Navbar
+- Splash Image with text overlay 
+- Image tiles with hover effect and text overlay
+- Basic Form
+
+### Video
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=zQ_kGtALtpY" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/SpaceStation_Project/Screenshot_space_station.jpg" alt="Spacestation_Demo" border="10" /></a>
+
+
