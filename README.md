@@ -1,5 +1,5 @@
 # HTML-Projects
-Projects contained in this folder are using HTML5, CSS3, and JavaScript. Some projects are very small and were created in a few minutes and other took up to 1 - 4 days. The content menu highlights a cross section of projects and code samples of various complexity.   
+Projects contained in this folder are using HTML5, CSS3, and JavaScript. Some projects are very small and were created in a few minutes and others took up to 1 - 4 days. The content menu highlights a cross section of projects and code samples of various complexity.   
 
 ## CONTENTS
 - [Bootstrap One-Page Website](#bootstrap-one-page-website)
