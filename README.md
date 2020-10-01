@@ -20,7 +20,7 @@ Basic Bootstrap HTML, CSS, JavaScript website created in about 1.5 days from con
 - Newletter link
 
 ### Video
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=NuLyN63lnTA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/Bootstrap4_project/Screenshot_cinema_1.jpg" alt="Bootstrap_Website" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=NuLyN63lnTA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/Bootstrap4_project/Screenshot_cinema_1_play.jpg" alt="Bootstrap_Website" border="10" /></a>
 
 ### HTML
 ```HTML
@@ -336,8 +336,7 @@ Basic vanilla HTML, CSS, JavaScript website created in about 4 days. No Framewor
 - JS Intro text fade effect
 
 ### Video
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Haga0Cn2OuA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/One_Page%20Website/Screenshot_mandelkorn_studio.jpg"  
-alt="One-Page-Website" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=Haga0Cn2OuA" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/One_Page%20Website/Screenshot_mandelkorn_studio_play.jpg" alt="One-Page-Website" border="10" /></a>
 
 ### HTML
 ```HTML
@@ -1163,6 +1162,6 @@ During the Tech Academy Bootcamp refresher I created this basic website with van
 - Basic Form
 
 ### Video
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=zQ_kGtALtpY" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/SpaceStation_Project/Screenshot_space_station.jpg" alt="Spacestation_Demo" border="10" /></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=zQ_kGtALtpY" target="_blank"><img src="https://github.com/alex-moffat/HTML-Projects/blob/master/SpaceStation_Project/Screenshot_space_station_play.jpg" alt="Spacestation_Demo" border="10" /></a>
 
 
